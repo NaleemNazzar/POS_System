@@ -34,19 +34,19 @@
             this.LeftToolStripPanel = new System.Windows.Forms.ToolStripPanel();
             this.ContentPanel = new System.Windows.Forms.ToolStripContentPanel();
             this.toolStrip = new System.Windows.Forms.ToolStrip();
+            this.BtnClose = new System.Windows.Forms.ToolStripButton();
+            this.BtnMax = new System.Windows.Forms.ToolStripButton();
+            this.BtnMin = new System.Windows.Forms.ToolStripButton();
             this.panel2 = new System.Windows.Forms.Panel();
-            this.LblUser = new System.Windows.Forms.Label();
-            this.panel3 = new System.Windows.Forms.Panel();
             this.button6 = new System.Windows.Forms.Button();
             this.button5 = new System.Windows.Forms.Button();
             this.button4 = new System.Windows.Forms.Button();
             this.button3 = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
             this.button1 = new System.Windows.Forms.Button();
+            this.LblUser = new System.Windows.Forms.Label();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.BtnClose = new System.Windows.Forms.ToolStripButton();
-            this.BtnMax = new System.Windows.Forms.ToolStripButton();
-            this.BtnMin = new System.Windows.Forms.ToolStripButton();
+            this.CenterPanel = new System.Windows.Forms.Panel();
             this.toolStrip.SuspendLayout();
             this.panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
@@ -105,6 +105,39 @@
             this.toolStrip.TabIndex = 0;
             this.toolStrip.Text = "toolStrip1";
             // 
+            // BtnClose
+            // 
+            this.BtnClose.Alignment = System.Windows.Forms.ToolStripItemAlignment.Right;
+            this.BtnClose.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
+            this.BtnClose.Image = global::POS_System.Properties.Resources.close_64;
+            this.BtnClose.ImageTransparentColor = System.Drawing.Color.Magenta;
+            this.BtnClose.Name = "BtnClose";
+            this.BtnClose.Size = new System.Drawing.Size(34, 28);
+            this.BtnClose.Text = "Close";
+            this.BtnClose.Click += new System.EventHandler(this.BtnClose_Click);
+            // 
+            // BtnMax
+            // 
+            this.BtnMax.Alignment = System.Windows.Forms.ToolStripItemAlignment.Right;
+            this.BtnMax.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
+            this.BtnMax.Image = global::POS_System.Properties.Resources.maximize_64;
+            this.BtnMax.ImageTransparentColor = System.Drawing.Color.Magenta;
+            this.BtnMax.Name = "BtnMax";
+            this.BtnMax.Size = new System.Drawing.Size(34, 28);
+            this.BtnMax.Text = "toolStripButton2";
+            this.BtnMax.Click += new System.EventHandler(this.BtnMax_Click);
+            // 
+            // BtnMin
+            // 
+            this.BtnMin.Alignment = System.Windows.Forms.ToolStripItemAlignment.Right;
+            this.BtnMin.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
+            this.BtnMin.Image = global::POS_System.Properties.Resources.minimize_64;
+            this.BtnMin.ImageTransparentColor = System.Drawing.Color.Magenta;
+            this.BtnMin.Name = "BtnMin";
+            this.BtnMin.Size = new System.Drawing.Size(34, 28);
+            this.BtnMin.Text = "toolStripButton3";
+            this.BtnMin.Click += new System.EventHandler(this.BtnMin_Click);
+            // 
             // panel2
             // 
             this.panel2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(91)))), ((int)(((byte)(61)))), ((int)(((byte)(204)))));
@@ -121,27 +154,6 @@
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(249, 462);
             this.panel2.TabIndex = 2;
-            // 
-            // LblUser
-            // 
-            this.LblUser.AutoSize = true;
-            this.LblUser.BackColor = System.Drawing.Color.Transparent;
-            this.LblUser.ForeColor = System.Drawing.Color.White;
-            this.LblUser.Location = new System.Drawing.Point(53, 113);
-            this.LblUser.Name = "LblUser";
-            this.LblUser.Size = new System.Drawing.Size(99, 28);
-            this.LblUser.TabIndex = 1;
-            this.LblUser.Text = "Username";
-            // 
-            // panel3
-            // 
-            this.panel3.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.panel3.Location = new System.Drawing.Point(276, 38);
-            this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(620, 440);
-            this.panel3.TabIndex = 3;
             // 
             // button6
             // 
@@ -251,6 +263,17 @@
             this.button1.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.button1.UseVisualStyleBackColor = false;
             // 
+            // LblUser
+            // 
+            this.LblUser.AutoSize = true;
+            this.LblUser.BackColor = System.Drawing.Color.Transparent;
+            this.LblUser.ForeColor = System.Drawing.Color.White;
+            this.LblUser.Location = new System.Drawing.Point(53, 113);
+            this.LblUser.Name = "LblUser";
+            this.LblUser.Size = new System.Drawing.Size(99, 28);
+            this.LblUser.TabIndex = 1;
+            this.LblUser.Text = "Username";
+            // 
             // pictureBox1
             // 
             this.pictureBox1.Image = global::POS_System.Properties.Resources.icons8_person_48;
@@ -261,45 +284,22 @@
             this.pictureBox1.TabIndex = 0;
             this.pictureBox1.TabStop = false;
             // 
-            // BtnClose
+            // CenterPanel
             // 
-            this.BtnClose.Alignment = System.Windows.Forms.ToolStripItemAlignment.Right;
-            this.BtnClose.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
-            this.BtnClose.Image = global::POS_System.Properties.Resources.close_64;
-            this.BtnClose.ImageTransparentColor = System.Drawing.Color.Magenta;
-            this.BtnClose.Name = "BtnClose";
-            this.BtnClose.Size = new System.Drawing.Size(34, 33);
-            this.BtnClose.Text = "Close";
-            this.BtnClose.Click += new System.EventHandler(this.BtnClose_Click);
-            // 
-            // BtnMax
-            // 
-            this.BtnMax.Alignment = System.Windows.Forms.ToolStripItemAlignment.Right;
-            this.BtnMax.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
-            this.BtnMax.Image = global::POS_System.Properties.Resources.maximize_64;
-            this.BtnMax.ImageTransparentColor = System.Drawing.Color.Magenta;
-            this.BtnMax.Name = "BtnMax";
-            this.BtnMax.Size = new System.Drawing.Size(34, 33);
-            this.BtnMax.Text = "toolStripButton2";
-            this.BtnMax.Click += new System.EventHandler(this.BtnMax_Click);
-            // 
-            // BtnMin
-            // 
-            this.BtnMin.Alignment = System.Windows.Forms.ToolStripItemAlignment.Right;
-            this.BtnMin.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
-            this.BtnMin.Image = global::POS_System.Properties.Resources.minimize_64;
-            this.BtnMin.ImageTransparentColor = System.Drawing.Color.Magenta;
-            this.BtnMin.Name = "BtnMin";
-            this.BtnMin.Size = new System.Drawing.Size(34, 33);
-            this.BtnMin.Text = "toolStripButton3";
-            this.BtnMin.Click += new System.EventHandler(this.BtnMin_Click);
+            this.CenterPanel.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.CenterPanel.Location = new System.Drawing.Point(255, 38);
+            this.CenterPanel.Name = "CenterPanel";
+            this.CenterPanel.Size = new System.Drawing.Size(641, 440);
+            this.CenterPanel.TabIndex = 3;
             // 
             // FrmMain
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(11F, 28F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(900, 500);
-            this.Controls.Add(this.panel3);
+            this.Controls.Add(this.CenterPanel);
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.toolStrip);
             this.Name = "FrmMain";
@@ -327,7 +327,7 @@
         private System.Windows.Forms.ToolStripButton BtnMax;
         private System.Windows.Forms.ToolStripButton BtnMin;
         private System.Windows.Forms.Panel panel2;
-        private System.Windows.Forms.Panel panel3;
+        private System.Windows.Forms.Panel CenterPanel;
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.Label LblUser;
         private System.Windows.Forms.Button button1;

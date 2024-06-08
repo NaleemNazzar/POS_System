@@ -25,15 +25,34 @@ namespace POS_System
 
         private void BtnLogin_Click(object sender, EventArgs e)
         {
-            this.Hide();
-            FrmMain frm = new FrmMain();
-            frm.Show();
+            if (MainClass.IsValidUser(TxtUser.Text, TxtPass.Text) == false)
+            {
+                MessageBox.Show("invalid username or password");
+                return;
+            }
+            else
+            {
+                this.Hide();
+                FrmMain frm = new FrmMain();
+                frm.Show();
+            }
+
 
         }
 
         private void PictureBox1_Click(object sender, EventArgs e)
         {
 
+        }
+
+        private void BtnClose_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
+        }
+
+        private void BtnMin_Click(object sender, EventArgs e)
+        {
+            this.WindowState = FormWindowState.Minimized;
         }
     }
 }
