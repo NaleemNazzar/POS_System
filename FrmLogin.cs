@@ -26,5 +26,13 @@ namespace POS_System
         {
 
         }
+
+        private void BtnLogin_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            FrmMain frm = new FrmMain();
+            frm.Show();
+
+        }
     }
 }
