@@ -22,16 +22,17 @@ namespace POS_System
 
         }
 
-        private void pictureBox1_Click(object sender, EventArgs e)
-        {
-
-        }
 
         private void BtnLogin_Click(object sender, EventArgs e)
         {
             this.Hide();
             FrmMain frm = new FrmMain();
             frm.Show();
+
+        }
+
+        private void PictureBox1_Click(object sender, EventArgs e)
+        {
 
         }
     }
