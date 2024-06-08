@@ -25,6 +25,22 @@ namespace POS_System
         private void FrmMain_Load(object sender, EventArgs e)
         {
             _obj = this;
+            BtnMax.PerformClick();
+        }
+
+        private void BtnClose_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
+        }
+
+        private void BtnMax_Click(object sender, EventArgs e)
+        {
+            //this.WindowState = FormWindowState.Maximized;
+        }
+
+        private void BtnMin_Click(object sender, EventArgs e)
+        {
+            this.WindowState= FormWindowState.Minimized;
         }
     }
 }

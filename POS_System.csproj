@@ -130,5 +130,32 @@
   <ItemGroup>
     <None Include="Resources\icons\icons8-person-48.png" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons\close-64.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons\maximize-64.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons\minimize-64.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons\home.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons\Categary.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons\Product.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons\Purchase.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons\Customers.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons\Sales.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
