@@ -25,18 +25,18 @@ namespace POS_System
 
         private void BtnLogin_Click(object sender, EventArgs e)
         {
-            if (MainClass.IsValidUser(TxtUser.Text, TxtPass.Text) == false)
-            {
-                MessageBox.Show("invalid username or password");
-                return;
-            }
-            else
+            if (MainClass.IsValidUser(TxtUser.Text, TxtPass.Text) == true)
+
             {
                 this.Hide();
                 FrmMain frm = new FrmMain();
                 frm.Show();
-            }
 
+            }
+            else
+            {
+                MessageBox.Show("Invalid username or password", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
 
         }
 

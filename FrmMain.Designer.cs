@@ -38,6 +38,7 @@
             this.BtnMax = new System.Windows.Forms.ToolStripButton();
             this.BtnMin = new System.Windows.Forms.ToolStripButton();
             this.panel2 = new System.Windows.Forms.Panel();
+            this.BtnUsers = new System.Windows.Forms.Button();
             this.button6 = new System.Windows.Forms.Button();
             this.button5 = new System.Windows.Forms.Button();
             this.button4 = new System.Windows.Forms.Button();
@@ -101,7 +102,7 @@
             this.toolStrip.LayoutStyle = System.Windows.Forms.ToolStripLayoutStyle.HorizontalStackWithOverflow;
             this.toolStrip.Location = new System.Drawing.Point(0, 0);
             this.toolStrip.Name = "toolStrip";
-            this.toolStrip.Size = new System.Drawing.Size(900, 38);
+            this.toolStrip.Size = new System.Drawing.Size(900, 33);
             this.toolStrip.TabIndex = 0;
             this.toolStrip.Text = "toolStrip1";
             // 
@@ -141,6 +142,7 @@
             // panel2
             // 
             this.panel2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(91)))), ((int)(((byte)(61)))), ((int)(((byte)(204)))));
+            this.panel2.Controls.Add(this.BtnUsers);
             this.panel2.Controls.Add(this.button6);
             this.panel2.Controls.Add(this.button5);
             this.panel2.Controls.Add(this.button4);
@@ -150,10 +152,29 @@
             this.panel2.Controls.Add(this.LblUser);
             this.panel2.Controls.Add(this.pictureBox1);
             this.panel2.Dock = System.Windows.Forms.DockStyle.Left;
-            this.panel2.Location = new System.Drawing.Point(0, 38);
+            this.panel2.Location = new System.Drawing.Point(0, 33);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(249, 462);
+            this.panel2.Size = new System.Drawing.Size(249, 467);
             this.panel2.TabIndex = 2;
+            // 
+            // BtnUsers
+            // 
+            this.BtnUsers.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(91)))), ((int)(((byte)(61)))), ((int)(((byte)(204)))));
+            this.BtnUsers.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.BtnUsers.FlatAppearance.BorderSize = 0;
+            this.BtnUsers.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.BtnUsers.Font = new System.Drawing.Font("Segoe UI", 10F);
+            this.BtnUsers.ForeColor = System.Drawing.Color.White;
+            this.BtnUsers.Image = global::POS_System.Properties.Resources.Sales;
+            this.BtnUsers.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.BtnUsers.Location = new System.Drawing.Point(58, 402);
+            this.BtnUsers.Name = "BtnUsers";
+            this.BtnUsers.Size = new System.Drawing.Size(110, 35);
+            this.BtnUsers.TabIndex = 2;
+            this.BtnUsers.Text = "   Users";
+            this.BtnUsers.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.BtnUsers.UseVisualStyleBackColor = false;
+            this.BtnUsers.Click += new System.EventHandler(this.BtnUsers_Click);
             // 
             // button6
             // 
@@ -265,19 +286,19 @@
             // 
             // LblUser
             // 
-            this.LblUser.AutoSize = true;
             this.LblUser.BackColor = System.Drawing.Color.Transparent;
             this.LblUser.ForeColor = System.Drawing.Color.White;
-            this.LblUser.Location = new System.Drawing.Point(53, 113);
+            this.LblUser.Location = new System.Drawing.Point(75, 115);
             this.LblUser.Name = "LblUser";
             this.LblUser.Size = new System.Drawing.Size(99, 28);
             this.LblUser.TabIndex = 1;
             this.LblUser.Text = "Username";
+            this.LblUser.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // pictureBox1
             // 
             this.pictureBox1.Image = global::POS_System.Properties.Resources.icons8_person_48;
-            this.pictureBox1.Location = new System.Drawing.Point(58, 14);
+            this.pictureBox1.Location = new System.Drawing.Point(82, 14);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(85, 85);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -304,11 +325,11 @@
             this.Controls.Add(this.toolStrip);
             this.Name = "FrmMain";
             this.Text = "  FrmMain";
+            this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             this.Load += new System.EventHandler(this.FrmMain_Load);
             this.toolStrip.ResumeLayout(false);
             this.toolStrip.PerformLayout();
             this.panel2.ResumeLayout(false);
-            this.panel2.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -336,5 +357,6 @@
         private System.Windows.Forms.Button button3;
         private System.Windows.Forms.Button button2;
         private System.Windows.Forms.Button button6;
+        private System.Windows.Forms.Button BtnUsers;
     }
 }

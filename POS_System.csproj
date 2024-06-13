@@ -85,6 +85,13 @@
       <DependentUpon>FrmMain.cs</DependentUpon>
     </Compile>
     <Compile Include="MainClass.cs" />
+    <Compile Include="Model\FrmUserAdd.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Model\FrmUserAdd.Designer.cs">
+      <DependentUpon>FrmUserAdd.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Model\HashTable.cs" />
     <Compile Include="Sample.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -105,6 +112,12 @@
     <Compile Include="SampleView.Designer.cs">
       <DependentUpon>SampleView.cs</DependentUpon>
     </Compile>
+    <Compile Include="View\FrmUserView.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\FrmUserView.Designer.cs">
+      <DependentUpon>FrmUserView.cs</DependentUpon>
+    </Compile>
     <EmbeddedResource Include="CustomMessageBox.resx">
       <DependentUpon>CustomMessageBox.cs</DependentUpon>
     </EmbeddedResource>
@@ -113,6 +126,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="FrmMain.resx">
       <DependentUpon>FrmMain.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Model\FrmUserAdd.resx">
+      <DependentUpon>FrmUserAdd.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -132,6 +148,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="SampleView.resx">
       <DependentUpon>SampleView.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\FrmUserView.resx">
+      <DependentUpon>FrmUserView.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
@@ -181,6 +200,13 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\icons\Search.png" />
+  </ItemGroup>
+  <ItemGroup />
+  <ItemGroup>
+    <None Include="Resources\icons\add2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons\Delete.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

@@ -28,28 +28,39 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.panel1 = new System.Windows.Forms.Panel();
+            this.Panel1 = new System.Windows.Forms.Panel();
+            this.PictureBox1 = new System.Windows.Forms.PictureBox();
             this.TxtSearch = new System.Windows.Forms.TextBox();
+            this.BtnAdd = new System.Windows.Forms.Button();
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
-            this.PictureBox1 = new System.Windows.Forms.PictureBox();
-            this.BtnAdd = new System.Windows.Forms.Button();
-            this.panel1.SuspendLayout();
+            this.Panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.PictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
-            // panel1
+            // Panel1
             // 
-            this.panel1.Controls.Add(this.PictureBox1);
-            this.panel1.Controls.Add(this.TxtSearch);
-            this.panel1.Controls.Add(this.BtnAdd);
-            this.panel1.Controls.Add(this.label2);
-            this.panel1.Controls.Add(this.label1);
-            this.panel1.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panel1.Location = new System.Drawing.Point(0, 0);
-            this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(865, 136);
-            this.panel1.TabIndex = 0;
+            this.Panel1.Controls.Add(this.PictureBox1);
+            this.Panel1.Controls.Add(this.TxtSearch);
+            this.Panel1.Controls.Add(this.BtnAdd);
+            this.Panel1.Controls.Add(this.label2);
+            this.Panel1.Controls.Add(this.label1);
+            this.Panel1.Dock = System.Windows.Forms.DockStyle.Top;
+            this.Panel1.Location = new System.Drawing.Point(0, 0);
+            this.Panel1.Name = "Panel1";
+            this.Panel1.Size = new System.Drawing.Size(865, 136);
+            this.Panel1.TabIndex = 0;
+            // 
+            // PictureBox1
+            // 
+            this.PictureBox1.BackColor = System.Drawing.Color.Transparent;
+            this.PictureBox1.Image = global::POS_System.Properties.Resources.Search;
+            this.PictureBox1.Location = new System.Drawing.Point(521, 86);
+            this.PictureBox1.Name = "PictureBox1";
+            this.PictureBox1.Size = new System.Drawing.Size(15, 15);
+            this.PictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.PictureBox1.TabIndex = 4;
+            this.PictureBox1.TabStop = false;
             // 
             // TxtSearch
             // 
@@ -63,6 +74,22 @@
             this.TxtSearch.Text = "      Search Here";
             this.TxtSearch.Click += new System.EventHandler(this.TxtSearch_Click);
             this.TxtSearch.TextChanged += new System.EventHandler(this.TxtSearch_TextChanged);
+            // 
+            // BtnAdd
+            // 
+            this.BtnAdd.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(91)))), ((int)(((byte)(51)))), ((int)(((byte)(204)))));
+            this.BtnAdd.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.BtnAdd.ForeColor = System.Drawing.Color.White;
+            this.BtnAdd.Image = global::POS_System.Properties.Resources.add;
+            this.BtnAdd.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.BtnAdd.Location = new System.Drawing.Point(68, 79);
+            this.BtnAdd.Name = "BtnAdd";
+            this.BtnAdd.Size = new System.Drawing.Size(127, 44);
+            this.BtnAdd.TabIndex = 2;
+            this.BtnAdd.Text = " Add New";
+            this.BtnAdd.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.BtnAdd.UseVisualStyleBackColor = false;
+            this.BtnAdd.Click += new System.EventHandler(this.BtnAdd_Click);
             // 
             // label2
             // 
@@ -86,43 +113,16 @@
             this.label1.TabIndex = 0;
             this.label1.Text = "Sample Header";
             // 
-            // PictureBox1
-            // 
-            this.PictureBox1.BackColor = System.Drawing.Color.Transparent;
-            this.PictureBox1.Image = global::POS_System.Properties.Resources.Search;
-            this.PictureBox1.Location = new System.Drawing.Point(521, 86);
-            this.PictureBox1.Name = "PictureBox1";
-            this.PictureBox1.Size = new System.Drawing.Size(15, 15);
-            this.PictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.PictureBox1.TabIndex = 4;
-            this.PictureBox1.TabStop = false;
-            // 
-            // BtnAdd
-            // 
-            this.BtnAdd.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(91)))), ((int)(((byte)(51)))), ((int)(((byte)(204)))));
-            this.BtnAdd.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.BtnAdd.ForeColor = System.Drawing.Color.White;
-            this.BtnAdd.Image = global::POS_System.Properties.Resources.add;
-            this.BtnAdd.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.BtnAdd.Location = new System.Drawing.Point(68, 79);
-            this.BtnAdd.Name = "BtnAdd";
-            this.BtnAdd.Size = new System.Drawing.Size(127, 44);
-            this.BtnAdd.TabIndex = 2;
-            this.BtnAdd.Text = " Add New";
-            this.BtnAdd.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.BtnAdd.UseVisualStyleBackColor = false;
-            this.BtnAdd.Click += new System.EventHandler(this.BtnAdd_Click);
-            // 
             // SampleView
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(11F, 28F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(865, 470);
-            this.Controls.Add(this.panel1);
+            this.Controls.Add(this.Panel1);
             this.Name = "SampleView";
             this.Text = "SampleView";
-            this.panel1.ResumeLayout(false);
-            this.panel1.PerformLayout();
+            this.Panel1.ResumeLayout(false);
+            this.Panel1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.PictureBox1)).EndInit();
             this.ResumeLayout(false);
 
@@ -130,7 +130,7 @@
 
         #endregion
         private System.Windows.Forms.PictureBox PictureBox1;
-        public System.Windows.Forms.Panel panel1;
+        public System.Windows.Forms.Panel Panel1;
         public System.Windows.Forms.Label label1;
         public System.Windows.Forms.Button BtnAdd;
         public System.Windows.Forms.Label label2;

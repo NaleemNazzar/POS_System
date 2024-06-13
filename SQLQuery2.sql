@@ -1,0 +1,8 @@
+﻿CREATE TABLE users (
+    userID INT PRIMARY KEY IDENTITY,
+    uName NVARCHAR(100) NOT NULL,
+    uUsername NVARCHAR(50) NOT NULL,
+    uPass NVARCHAR(50) NOT NULL,
+    uPhone NVARCHAR(20),
+    uImage VARBINARY(MAX)
+);

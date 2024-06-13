@@ -73,6 +73,16 @@ namespace POS_System.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap add2 {
+            get {
+                object obj = ResourceManager.GetObject("add2", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap Categary {
             get {
                 object obj = ResourceManager.GetObject("Categary", resourceCulture);
@@ -96,6 +106,16 @@ namespace POS_System.Properties {
         internal static System.Drawing.Bitmap Customers {
             get {
                 object obj = ResourceManager.GetObject("Customers", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Delete {
+            get {
+                object obj = ResourceManager.GetObject("Delete", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
